@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "iTunnel Dependency Installer (Created By @shmadul 2017)"
+[ ! -f "`which brew`" ] && echo "Installing HomeBrew" && ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && INSTALLED="yes"
+[ ! -f "`which python`" ] && echo "Installing Python" && brew install python && INSTALLED="yes"
+[ ! -f "`which perl`" ] && echo "Installing Perl" && brew install perl && INSTALLED="yes"
+[ ! -f "`which expect`" ] && echo "Installing Expect" && brew install expect && INSTALLED="yes"
+echo "Finished Installing Dependencies, Now You can Run iTunnel.app"
